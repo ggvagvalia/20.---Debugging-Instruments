@@ -24,8 +24,6 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        countriesTableView.dataSource = self
-        countriesTableView.delegate = self
         setupUI()
         fetchCountryData()
     }
@@ -38,6 +36,8 @@ class MainVC: UIViewController {
         navigationItem.largeTitleDisplayMode = .always
         navigationItem.title = "Countries"
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        countriesTableView.dataSource = self
+        countriesTableView.delegate = self
         
         NSLayoutConstraint.activate([
             countriesTableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 21),

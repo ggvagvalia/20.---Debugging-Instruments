@@ -26,7 +26,7 @@ class CountryDetailsPage: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.axis = .vertical
         view.distribution = .fillProportionally
-        view.spacing = 10
+        view.spacing = 20
         return view
     }()
     
@@ -254,25 +254,33 @@ class CountryDetailsPage: UIViewController {
         detailStackView.addArrangedSubview(flagInfoText)
         detailStackView.addArrangedSubview(thinLine)
         detailStackView.addArrangedSubview(basicInfoLabel)
+        
         detailStackView.addArrangedSubview(independenceHStackView)
         independenceHStackView.addArrangedSubview(independenceLabel)
         independenceHStackView.addArrangedSubview(independenceData)
+        
         detailStackView.addArrangedSubview(spellingHStackView)
         spellingHStackView.addArrangedSubview(spellingLabel)
         spellingHStackView.addArrangedSubview(spellingDataLabel)
+        
         detailStackView.addArrangedSubview(capitalHStackView)
         capitalHStackView.addArrangedSubview(capitalLabel)
         capitalHStackView.addArrangedSubview(capitalDataLabel)
+        
         detailStackView.addArrangedSubview(populationHStackView)
         populationHStackView.addArrangedSubview(populationLabel)
         populationHStackView.addArrangedSubview(populationDataLabel)
+        
         detailStackView.addArrangedSubview(regionHStackView)
         regionHStackView.addArrangedSubview(regionlabel)
         regionHStackView.addArrangedSubview(regionDataLabel)
+        
         detailStackView.addArrangedSubview(neighborsHStackView)
         neighborsHStackView.addArrangedSubview(neighborslabel)
         neighborsHStackView.addArrangedSubview(neighborsDataLabel)
+        
         detailStackView.addArrangedSubview(thinLine2)
+        
         view.addSubview(usefulLinksLabel)
         view.addSubview(mapsView)
         mapsView.addSubview(googleMapsView)
@@ -282,7 +290,6 @@ class CountryDetailsPage: UIViewController {
         
         SetupScrollViewConstraints()
         SetupLinksConstraints()
-        
     }
     
     // MARK: - SetupScrollViewConstraints

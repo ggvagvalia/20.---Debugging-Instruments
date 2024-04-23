@@ -26,6 +26,5 @@ class RightAlignedCustomLabel: UILabel {
         font = UIFont.systemFont(ofSize: 14)
         textColor = .label
         numberOfLines = 0
-        
     }
 }
